@@ -1,0 +1,77 @@
+]1341;command_started;command=6563686f20223d3d3d20d091d09bd09ed09ad098d0a0d09ed092d09ad09020313a20d0bad0bed0bcd0bcd0b8d18220d0bad0bed0b4d0b020d18120d0bed188d0b8d0b1d0bad0bed0b920d181d182d0b8d0bbd18f2028686f6f6b207275666629203d3d3d22=== БЛОКИРОВКА 1: коммит кода с ошибкой стиля (hook ruff) ===
+Намеренно добавлен файл tmp_block/bad_style.py: неиспользуемые импорты и строка длиннее 88 символов.
+[INFO] Initializing environment for https://github.com/pre-commit/pre-commit-hooks.
+[WARNING] repo `https://github.com/pre-commit/pre-commit-hooks` uses deprecated stage names (commit, push) which will be removed in a future version.  Hint: often `pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks` will fix this.  if it does not -- consider reporting an issue to that repo.
+[INFO] Initializing environment for https://github.com/astral-sh/ruff-pre-commit.
+[INFO] Installing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/astral-sh/ruff-pre-commit.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+fix end of files.........................................................Passed
+trim trailing whitespace.................................................Passed
+check yaml...........................................(no files to check)Skipped
+check json...........................................(no files to check)Skipped
+check for merge conflicts................................................Passed
+check for added large files..............................................Passed
+detect private key.......................................................Passed
+detect aws credentials...................................................Passed
+ruff.....................................................................Failed
+- hook id: ruff
+- exit code: 1
+- files were modified by this hook
+
+tmp_block/bad_style.py:4:5: F841 Local variable `message` is assigned to but never used
+  |
+3 | def compute(x):
+4 |     message = "this line is intentionally longer than eighty eight characters to trigger the E501 rule of ruff"
+  |     ^^^^^^^ F841
+5 |     return x + 1
+  |
+  = help: Remove assignment to unused variable `message`
+
+Found 3 errors (2 fixed, 1 remaining).
+No fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).
+
+exit code команды git commit: 1
+]1341;command_started;command=6563686f
+
+
+=== БЛОКИРОВКА 2: коммит файла с секретом (hook detect-private-key) ===
+Намеренно добавлен файл tmp_block/id_rsa: закрытый RSA-ключ в формате PEM.
+fix end of files.........................................................Passed
+trim trailing whitespace.................................................Passed
+check yaml...........................................(no files to check)Skipped
+check json...........................................(no files to check)Skipped
+check for merge conflicts................................................Passed
+check for added large files..............................................Passed
+detect private key.......................................................Failed
+- hook id: detect-private-key
+- exit code: 1
+
+Private key found: tmp_block/id_rsa
+
+detect aws credentials...................................................Passed
+ruff.................................................(no files to check)Skipped
+exit code команды git commit: 1
+]1341;command_started;command=6563686f
+
+
+=== БЛОКИРОВКА 3: коммит бинарного файла сверх размера (hook check-added-large-files, лимит 500 КБ) ===
+Намеренно добавлен файл tmp_block/big.bin размером 2 МБ.
+fix end of files.....................................(no files to check)Skipped
+trim trailing whitespace.............................(no files to check)Skipped
+check yaml...........................................(no files to check)Skipped
+check json...........................................(no files to check)Skipped
+check for merge conflicts............................(no files to check)Skipped
+check for added large files..............................................Failed
+- hook id: check-added-large-files
+- exit code: 1
+
+tmp_block/big.bin (2048 KB) exceeds 500 KB.
+
+detect private key...................................(no files to check)Skipped
+detect aws credentials...............................(no files to check)Skipped
+ruff.................................................(no files to check)Skipped
+exit code команды git commit: 1

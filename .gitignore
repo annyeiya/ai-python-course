@@ -1,0 +1,23 @@
+# Окружение и кэши
+.venv/
+venv/
+.idea/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Прогоны MLflow (по требованию методички в git не добавляются)
+mlruns/
+
+# Сырые данные: в git живёт только data/hash_manifest.json
+data/raw/
+
+# Логи вне отчётов - мусор; логи-артефакты внутри reports/ нужны
+*.log
+!reports/**/*.log
+
+# Временные файлы негативных контролей
+tmp_block/

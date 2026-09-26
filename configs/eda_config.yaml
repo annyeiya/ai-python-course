@@ -1,0 +1,23 @@
+# Настройки ЛР1 (вариант 10 "Шумовые признаки", профиль P1 - табличный).
+dataset_path: data/raw/dataset.csv
+hash_manifest_path: data/hash_manifest.json
+report_dir: reports/LAB1
+
+seed: 511
+
+# Параметры генерации данных варианта 10 (make_classification)
+n_samples: 20000
+n_informative: 10
+n_redundant: 5
+n_repeated: 5
+n_classes: 2
+
+# Пороги EDA
+auc_noise_tol: 0.02
+corr_dup_threshold: 0.99
+outlier_z: 3.0
+
+# План разбиения (применяется с ЛР2, объявляется в паспорте данных)
+split_train: 0.70
+split_val: 0.15
+split_test: 0.15
