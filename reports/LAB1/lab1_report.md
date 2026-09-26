@@ -61,6 +61,9 @@ configs/eda_config.yaml`.
 минимальный однопризнаковый AUC 0.506664 у feature_17
 (eda_stats.csv: n_noise_features, n_dup_pairs, min_feature_auc).
 
+![Распределение признаков](features_grid.png)
+![Матрица корреляции](corr_heatmap.png)
+
 ## 4. Выводы
 
 1. Объём датасета - 20000 строк и 21 столбцов (eda_stats.csv: n_rows, n_cols; src/eda.py).
@@ -92,16 +95,16 @@ configs/eda_config.yaml`.
 - Ветки: `main` (защищена ruleset protect-main: прямой push отклоняётся,
   изменения только через pull request), рабочая ветка ЛР1 - `dev`.
 - Шаблон описания изменения: `.github/pull_request_template.md`.
-- pre-commit (конфигурация - reports/LAB1/precommit_config.yaml): `ruff` - стиль кода;
+- pre-commit (конфигурация - .pre-commit_config.yaml): `ruff` - стиль кода;
   `detect-private-key`, `detect-aws-credentials` - проверка секретов;
   `check-added-large-files --maxkb=500` - запрет больших файлов;
   `end-of-file-fixer`, `trailing-whitespace`, `check-yaml`, `check-json`,
   `check-merge-conflict` - быстрые проверки.
-- Окружение: Python 3.11, venv `.venv`, список версий в requirements.txt.
+- Окружение: Python 3.14, venv `.venv`, список версий в requirements.txt.
 - Прогоны MLflow: в ЛР1 не выполняются (регистрация прогонов начинается с ЛР2).
 
 ## 7. Приложения: подтверждения проверок
 
 - reports/LAB1/push_rejected.log
 
-Скриншоты приложены к PR работы; push_rejected.log - текстовый вывод отклонённого прямого push в main (работает ruleset).
+push_rejected.log - текстовый вывод отклонённого прямого push в main (работает ruleset).

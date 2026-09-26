@@ -422,7 +422,7 @@ def write_report(cfg: EdaConfig, v: dict, concl: list[str], pairs: list[tuple],
         section7 = (
             "\n## 7. Приложения: подтверждения проверок\n\n"
             f"{items}\n\n"
-            "Скриншоты приложены к PR работы; push_rejected.log - текстовый "
+            "push_rejected.log - текстовый "
             "вывод отклонённого прямого push в main (работает ruleset).\n"
         )
     text = f"""# ЛР1. Git-окружение, прекоммитные проверки и EDA варианта
@@ -488,6 +488,9 @@ configs/eda_config.yaml`.
 минимальный однопризнаковый AUC {v['min_feature_auc']} у {v['min_feature_auc_name']}
 (eda_stats.csv: n_noise_features, n_dup_pairs, min_feature_auc).
 
+![Распределение признаков](features_grid.png)
+![Матрица корреляции](corr_heatmap.png)
+
 ## 4. Выводы
 
 {chr(10).join(concl)}
@@ -509,12 +512,12 @@ configs/eda_config.yaml`.
 - Ветки: `main` (защищена ruleset protect-main: прямой push отклоняётся,
   изменения только через pull request), рабочая ветка ЛР1 - `dev`.
 - Шаблон описания изменения: `.github/pull_request_template.md`.
-- pre-commit (конфигурация - reports/LAB1/precommit_config.yaml): `ruff` - стиль кода;
+- pre-commit (конфигурация - .pre-commit_config.yaml): `ruff` - стиль кода;
   `detect-private-key`, `detect-aws-credentials` - проверка секретов;
   `check-added-large-files --maxkb=500` - запрет больших файлов;
   `end-of-file-fixer`, `trailing-whitespace`, `check-yaml`, `check-json`,
   `check-merge-conflict` - быстрые проверки.
-- Окружение: Python 3.11, venv `.venv`, список версий в requirements.txt.
+- Окружение: Python 3.14, venv `.venv`, список версий в requirements.txt.
 - Прогоны MLflow: в ЛР1 не выполняются (регистрация прогонов начинается с ЛР2).
 {section7}"""
     (out / "lab1_report.md").write_text(text, encoding="utf-8")
