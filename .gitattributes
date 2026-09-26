@@ -1,0 +1,17 @@
+# Единые переводы строк: LF в репозитории
+* text=auto eol=lf
+
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+
+# Бинарные файлы: не диффить и не нормализовать
+*.png binary
+*.joblib binary
+*.pt binary
+*.npz binary
+*.bin binary
