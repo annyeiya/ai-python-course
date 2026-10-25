@@ -11,7 +11,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Установить проверки
-        run: pip install ruff pytest pandas numpy scikit-learn pydantic pyyaml joblib
+        run: pip install ruff pytest pandas numpy scikit-learn pydantic pyyaml joblib matplotlib
       - name: Стиль кода
         run: ruff check .
       - name: Тесты (появятся в ЛР2 и ЛР5)
