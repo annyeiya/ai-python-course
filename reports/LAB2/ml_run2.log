@@ -1,0 +1,7 @@
+[tune] лучшее C=1.0 по ROC-AUC на validation
+[full] accuracy=0.7980 pr_auc=0.8641 roc_auc=0.8748 peak=3.58 МБ time=1.70 c
+[chunks] accuracy=0.7580 pr_auc=0.8411 roc_auc=0.8315 peak=2.25 МБ time=2.36 c
+[model] reports/LAB2/ml_model.joblib sha256=dcaab7b63186adede4c04309dde21f4674b00d51ba09befe925cfab7eb2b5314
+[model] L1 обнулил признаков: 8 -> ['feature_00', 'feature_01', 'feature_02', 'feature_03', 'feature_06', 'feature_09', 'feature_10', 'feature_18']
+[csv] reports/LAB2/ml_metrics.csv (строк: 11)
+[report] reports/LAB2/lab2_report.md
