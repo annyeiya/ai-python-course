@@ -11,9 +11,11 @@ jobs:
         with:
           python-version: "3.11"
       - name: Установить проверки
-        run: pip install ruff pytest
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install ruff pytest pandas numpy scikit-learn pydantic pyyaml joblib
       - name: Стиль кода
         run: ruff check .
-      - name: Тесты
+      - name: Тесты (появятся в ЛР2 и ЛР5)
         run: |
           if ls tests/test_*.py >/dev/null 2>&1; then pytest tests -q; else echo "тестов пока нет"; fi
