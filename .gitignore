@@ -11,6 +11,7 @@ htmlcov/
 
 # Прогоны MLflow (по требованию методички в git не добавляются)
 mlruns/
+mlflow.db
 
 # Сырые данные: в git живёт только data/hash_manifest.json
 data/raw/
