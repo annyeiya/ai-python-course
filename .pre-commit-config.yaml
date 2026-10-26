@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      # --- быстрые проверки ---
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+      # --- запрет больших файлов: датасет и модели не должны попадать в git ---
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+      # --- проверка секретов ---
+      - id: detect-private-key
+      - id: detect-aws-credentials
+        args: ["--allow-missing-credentials"]
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      # --- стиль кода ---
+      - id: ruff
+        args: ["--fix"]

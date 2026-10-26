@@ -1,0 +1,9 @@
+{
+  "files": [
+    {
+      "path": "data/raw/dataset.csv",
+      "sha256": "6a0f0cf7c9c9b642638803e9b8db0a0fb67376d362777a756222820703ae4697",
+      "size_bytes": 7771299
+    }
+  ]
+}

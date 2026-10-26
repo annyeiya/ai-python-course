@@ -1,0 +1,5 @@
+[eda] сводки: reports/LAB1/eda_stats.csv (строк: 82)
+[eda] графики сохранены в reports/LAB1
+[eda] отчёт: reports/LAB1/lab1_report.md
+[eda] шумовые признаки: feature_00, feature_06, feature_17
+[eda] пары дубликатов: 7, максимальная |r| = 1.0000

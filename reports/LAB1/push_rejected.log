@@ -1,0 +1,8 @@
+remote: error: GH013: Repository rule violations found for refs/heads/main.
+remote: Review all repository rules at https://github.com/annyeiya/ai-python-course/rules?ref=refs%2Fheads%2Fmain
+remote:
+remote: - Changes must be made through a pull request.
+remote:
+To github.com:annyeiya/ai-python-course.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'github.com:annyeiya/ai-python-course.git'

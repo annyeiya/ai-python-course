@@ -1,0 +1,83 @@
+metric,value,source
+n_rows,20000,src/eda.py
+n_cols,21,src/eda.py
+n_feature_cols,20,src/eda.py
+dtype_features,float64,src/eda.py
+dtype_target,int64,src/eda.py
+n_missing,0,src/eda.py
+n_full_duplicates,0,src/eda.py
+outlier_row_share,0.04385,src/eda.py
+class_0_share,0.5005,src/eda.py; class_share.png
+class_1_share,0.4995,src/eda.py; class_share.png
+n_noise_features,3,src/eda.py; problem.png
+noise_features,feature_00;feature_06;feature_17,src/eda.py; problem.png
+min_feature_auc,0.506664,src/eda.py; problem.png
+min_feature_auc_name,feature_17,src/eda.py; problem.png
+max_feature_auc,0.681384,src/eda.py; problem.png
+max_feature_auc_name,feature_07,src/eda.py; problem.png
+n_dup_pairs,7,src/eda.py; corr_heatmap.png
+max_abs_corr,1.0,src/eda.py; corr_heatmap.png
+max_abs_corr_pair,feature_00|feature_06,src/eda.py; corr_heatmap.png
+dataset_sha256,6a0f0cf7c9c9b642638803e9b8db0a0fb67376d362777a756222820703ae4697,data/hash_manifest.json
+dataset_size_bytes,7771299,data/hash_manifest.json
+seed,511,configs/eda_config.yaml
+auc_feature_00,0.516609,src/eda.py; problem.png
+mean_feature_00,0.032578,src/eda.py; features_grid.png
+std_feature_00,2.052188,src/eda.py; features_grid.png
+auc_feature_01,0.624732,src/eda.py; problem.png
+mean_feature_01,-0.487856,src/eda.py; features_grid.png
+std_feature_01,2.173151,src/eda.py; features_grid.png
+auc_feature_02,0.663761,src/eda.py; problem.png
+mean_feature_02,-0.140131,src/eda.py; features_grid.png
+std_feature_02,3.420576,src/eda.py; features_grid.png
+auc_feature_03,0.548788,src/eda.py; problem.png
+mean_feature_03,1.310235,src/eda.py; features_grid.png
+std_feature_03,3.652809,src/eda.py; features_grid.png
+auc_feature_04,0.63223,src/eda.py; problem.png
+mean_feature_04,0.496682,src/eda.py; features_grid.png
+std_feature_04,2.082366,src/eda.py; features_grid.png
+auc_feature_05,0.663186,src/eda.py; problem.png
+mean_feature_05,-0.528744,src/eda.py; features_grid.png
+std_feature_05,1.781385,src/eda.py; features_grid.png
+auc_feature_06,0.516609,src/eda.py; problem.png
+mean_feature_06,0.032578,src/eda.py; features_grid.png
+std_feature_06,2.052188,src/eda.py; features_grid.png
+auc_feature_07,0.681384,src/eda.py; problem.png
+mean_feature_07,-0.25961,src/eda.py; features_grid.png
+std_feature_07,3.301625,src/eda.py; features_grid.png
+auc_feature_08,0.663186,src/eda.py; problem.png
+mean_feature_08,-0.528744,src/eda.py; features_grid.png
+std_feature_08,1.781385,src/eda.py; features_grid.png
+auc_feature_09,0.560477,src/eda.py; problem.png
+mean_feature_09,-1.851752,src/eda.py; features_grid.png
+std_feature_09,3.902406,src/eda.py; features_grid.png
+auc_feature_10,0.624732,src/eda.py; problem.png
+mean_feature_10,-0.487856,src/eda.py; features_grid.png
+std_feature_10,2.173151,src/eda.py; features_grid.png
+auc_feature_11,0.666489,src/eda.py; problem.png
+mean_feature_11,-0.50125,src/eda.py; features_grid.png
+std_feature_11,1.774658,src/eda.py; features_grid.png
+auc_feature_12,0.656726,src/eda.py; problem.png
+mean_feature_12,0.486438,src/eda.py; features_grid.png
+std_feature_12,2.038947,src/eda.py; features_grid.png
+auc_feature_13,0.654222,src/eda.py; problem.png
+mean_feature_13,-0.500164,src/eda.py; features_grid.png
+std_feature_13,1.850953,src/eda.py; features_grid.png
+auc_feature_14,0.661741,src/eda.py; problem.png
+mean_feature_14,0.512026,src/eda.py; features_grid.png
+std_feature_14,1.805751,src/eda.py; features_grid.png
+auc_feature_15,0.663186,src/eda.py; problem.png
+mean_feature_15,-0.528744,src/eda.py; features_grid.png
+std_feature_15,1.781385,src/eda.py; features_grid.png
+auc_feature_16,0.634847,src/eda.py; problem.png
+mean_feature_16,-0.504104,src/eda.py; features_grid.png
+std_feature_16,2.113641,src/eda.py; features_grid.png
+auc_feature_17,0.506664,src/eda.py; problem.png
+mean_feature_17,-0.008444,src/eda.py; features_grid.png
+std_feature_17,2.136092,src/eda.py; features_grid.png
+auc_feature_18,0.624732,src/eda.py; problem.png
+mean_feature_18,-0.487856,src/eda.py; features_grid.png
+std_feature_18,2.173151,src/eda.py; features_grid.png
+auc_feature_19,0.642161,src/eda.py; problem.png
+mean_feature_19,-0.225249,src/eda.py; features_grid.png
+std_feature_19,3.564674,src/eda.py; features_grid.png
