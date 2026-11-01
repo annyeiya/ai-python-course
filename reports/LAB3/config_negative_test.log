@@ -1,0 +1,12 @@
+]1341;command_started;command=666f722062616420696e206261645f6c72206261645f64726f706f7574206261645f706174685f646c=== configs/negative/bad_lr.yaml ===
+КОНФИГУРАЦИЯ НЕВАЛИДНА, работа остановлена:
+  - поле lr: Value error, lr должен быть > 0, получено -0.001 (значение: -0.001)
+exit=2
+=== configs/negative/bad_dropout.yaml ===
+КОНФИГУРАЦИЯ НЕВАЛИДНА, работа остановлена:
+  - поле dropout: Value error, dropout должен быть в [0, 1), получено 1.5 (значение: 1.5)
+exit=2
+=== configs/negative/bad_path_dl.yaml ===
+КОНФИГУРАЦИЯ НЕВАЛИДНА, работа остановлена:
+  - поле dataset_path: Value error, файл не найден: data/raw/missing_dataset.csv (проверьте путь в конфиге) (значение: data/raw/missing_dataset.csv)
+exit=2

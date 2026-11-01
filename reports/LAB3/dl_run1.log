@@ -1,0 +1,9 @@
+2026/10/25 11:35:00 INFO mlflow.tracking.fluent: Experiment with name 'lab3-variant10' does not exist. Creating a new experiment.
+[full] accuracy=0.9890 pr_auc=0.9912 roc_auc=0.9941 epochs=59 (best 51, val_loss 0.041517) peak=11.12 МБ time=29.87 c
+[chunks] accuracy=0.9910 pr_auc=0.9925 roc_auc=0.9947 epochs=60 (best 59, val_loss 0.041404) peak=2.69 МБ time=38.57 c
+[parity] device=cuda max|diff|=1.19e-07 ok=True
+[model] reports/LAB3/dl_model.pt sha256=3cb6279e815e5e7b4f4b7d1ceb9a3c246d2fc08874842f335d2d7a60082f95b5
+[mlflow] full=e4bc814005fb4129b8ac5e6daeb86cef chunks=410ae42c63bc4bff84c62df56af06dfc
+[csv] reports/LAB3/dl_metrics.csv (строк: 6)
+[csv] reports/LAB3/memory_compare.csv (строк: 2)
+[report] reports/LAB3/lab3_report.md

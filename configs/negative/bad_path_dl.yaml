@@ -1,0 +1,9 @@
+# Негативный контроль ЛР3-3: файла данных не существует - схема обязана отказать.
+dataset_path: data/raw/missing_dataset.csv
+hash_manifest_path: data/hash_manifest.json
+lab2_metrics_path: reports/LAB2/ml_metrics.csv
+report_dir: reports/LAB3
+checkpoint_path: reports/LAB3/dl_model.pt
+seed: 511
+author: Нефедова А.А.
+report_date: "2026-10-25"

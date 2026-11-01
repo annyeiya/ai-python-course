@@ -1,0 +1,3 @@
+mode,peak_memory_mb,train_time_sec,epochs_run
+full,11.1172,29.6238,59
+chunks,2.7151,36.3652,60
