@@ -1,0 +1,32 @@
+# Пути к данным ЛР1 и артефактам ЛР5.
+dataset_path: data/raw/dataset.csv
+hash_manifest_path: data/hash_manifest.json
+report_dir: reports/LAB5
+generated_dir: data/generated/LAB5
+
+# Зерно разбиения данных фиксировано отдельно от зерна генерации.
+split_seed: 511
+
+author: Нефедова А.А.
+report_date: "2026-11-15"
+
+# Шаг 1: настройки класса генератора.
+generator:
+  mode: similar
+  n_rows: 10000
+  seed: 511
+
+  # Схема выхода и порядок колонок.
+  features: [feature_00, feature_01, feature_02, feature_03, feature_04,
+             feature_05, feature_06, feature_07, feature_08, feature_09,
+             feature_10, feature_11, feature_12, feature_13, feature_14,
+             feature_15, feature_16, feature_17, feature_18, feature_19]
+  target: target
+
+  # Нулевой дрейф для исходного сравнения similar и random.
+  drift:
+    mean_shift: 0.0
+    class_one_share: null
+    label_flip: 0.0
+    season_amplitude: 0.0
+    season_period: 20
