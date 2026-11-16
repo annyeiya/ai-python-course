@@ -1,0 +1,10 @@
+[repeat] full accuracy: повтор=0.798000 csv=0.798000 совпадает=True
+[repeat] full pr_auc: повтор=0.864095 csv=0.864095 совпадает=True
+[repeat] full roc_auc: повтор=0.874766 csv=0.874766 совпадает=True
+[repeat] chunks accuracy: повтор=0.758000 csv=0.758000 совпадает=True
+[repeat] chunks pr_auc: повтор=0.841107 csv=0.841107 совпадает=True
+[repeat] chunks roc_auc: повтор=0.831462 csv=0.831462 совпадает=True
+[repeat] загруженная модель accuracy: 0.798000 csv=0.798000 совпадает=True
+[repeat] загруженная модель pr_auc: 0.864095 csv=0.864095 совпадает=True
+[repeat] загруженная модель roc_auc: 0.874766 csv=0.874766 совпадает=True
+[repeat] ВЕРДИКТ: совпадает

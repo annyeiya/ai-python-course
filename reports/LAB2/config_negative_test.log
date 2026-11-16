@@ -1,0 +1,12 @@
+]1341;command_started;command=666f722062616420696e206261645f6368756e6b206261645f70617468206261645f63=== configs/negative/bad_chunk.yaml ===
+КОНФИГУРАЦИЯ НЕВАЛИДНА, работа остановлена:
+  - поле chunk_size: Value error, значение должно быть >= 1, получено 0 (значение: 0)
+exit=2
+=== configs/negative/bad_path.yaml ===
+КОНФИГУРАЦИЯ НЕВАЛИДНА, работа остановлена:
+  - поле dataset_path: Value error, файл не найден: data/raw/missing_dataset.csv (проверьте путь в конфиге) (значение: data/raw/missing_dataset.csv)
+exit=2
+=== configs/negative/bad_c.yaml ===
+КОНФИГУРАЦИЯ НЕВАЛИДНА, работа остановлена:
+  - поле c_grid: Value error, все C должны быть > 0, получены невалидные: [-1.0] (значение: [-1.0, 0.1])
+exit=2

@@ -1,0 +1,10 @@
+# Негативный контроль 1: размер чанка меньше единицы - схема обязана отказать.
+dataset_path: data/raw/dataset.csv
+hash_manifest_path: data/hash_manifest.json
+report_dir: reports/LAB2
+model_path: reports/LAB2/ml_model.joblib
+seed: 511
+chunk_size: 0
+c_grid: [0.01, 0.1, 1.0]
+author: Нефедова А.А.
+report_date: "2026-09-24"
