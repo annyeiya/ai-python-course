@@ -1,0 +1,36 @@
+# Шаг 1. Пути и настройки валидатора.
+dataset_path: data/raw/dataset.csv
+hash_manifest_path: data/hash_manifest.json
+working_model_path: reports/LAB3/dl_model.pt
+report_dir: reports/LAB4
+
+# Разбиение соответствует настройкам ЛР3.
+seed: 511
+val_size: 0.15
+test_size: 0.15
+
+# Порядок признаков должен совпадать с рабочей моделью.
+features: [feature_00, feature_01, feature_02, feature_03, feature_04,
+           feature_05, feature_06, feature_07, feature_08, feature_09,
+           feature_10, feature_11, feature_12, feature_13, feature_14,
+           feature_15, feature_16, feature_17, feature_18, feature_19]
+
+# Профиль P1: расстояние в пространстве признаков.
+proximity_method: mahalanobis_per_class
+
+# Пороги правила отказа и критерии качества.
+dist_quantile: 0.995
+conf_threshold: 0.65
+false_reject_max: 0.05
+recall_min: 0.95
+stat_tol: 1.0e-6
+
+# Чанковый режим и негативные контроли.
+chunk_size: 2000
+alien_size: 500
+shift_sigma: 3.0
+outlier_mult: 8.0
+foreign_scale: 40.0
+
+author: Нефедова А.А.
+report_date: "2026-11-1"
