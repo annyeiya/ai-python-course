@@ -1,0 +1,12 @@
+{"time": "2026-11-27T19:26:32.622222+00:00", "ok": true, "requests": 2, "http_5xx": 0, "predictions": 0, "warnings": 0, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 1, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:34.015029+00:00", "ok": true, "requests": 9, "http_5xx": 0, "predictions": 1, "warnings": 0, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 2, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:35.321720+00:00", "ok": true, "requests": 11, "http_5xx": 0, "predictions": 1, "warnings": 0, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 3, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:36.634665+00:00", "ok": true, "requests": 13, "http_5xx": 0, "predictions": 1, "warnings": 0, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 4, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:37.977057+00:00", "ok": true, "requests": 153, "http_5xx": 0, "predictions": 2, "warnings": 1, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 5, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:39.249985+00:00", "ok": true, "requests": 539, "http_5xx": 0, "predictions": 102, "warnings": 2, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 6, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:40.528908+00:00", "ok": true, "requests": 670, "http_5xx": 0, "predictions": 161, "warnings": 3, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 7, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:41.863163+00:00", "ok": true, "requests": 963, "http_5xx": 0, "predictions": 442, "warnings": 7, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 8, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:43.220495+00:00", "ok": true, "requests": 1246, "http_5xx": 0, "predictions": 725, "warnings": 8, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 9, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:44.658456+00:00", "ok": true, "requests": 1474, "http_5xx": 0, "predictions": 959, "warnings": 10, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 10, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:46.030900+00:00", "ok": true, "requests": 1633, "http_5xx": 0, "predictions": 1102, "warnings": 11, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 11, "monitor_failures": 0}
+{"time": "2026-11-27T19:26:47.265118+00:00", "ok": true, "requests": 1635, "http_5xx": 0, "predictions": 1102, "warnings": 11, "active": "ml-v1", "monitor_status": "ok", "monitor_polls": 12, "monitor_failures": 0}

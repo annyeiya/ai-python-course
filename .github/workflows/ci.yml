@@ -13,7 +13,8 @@ jobs:
       - name: Установить проверки
         run: |
           pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install ruff pytest pandas numpy scikit-learn pydantic pyyaml joblib
+          pip install ruff pytest pandas numpy scikit-learn pydantic pyyaml joblib matplotlib seaborn
+          pip install fastapi==0.115.12 uvicorn==0.34.3 httpx==0.28.1
       - name: Стиль кода
         run: ruff check .
       - name: Тесты (появятся в ЛР2 и ЛР5)
